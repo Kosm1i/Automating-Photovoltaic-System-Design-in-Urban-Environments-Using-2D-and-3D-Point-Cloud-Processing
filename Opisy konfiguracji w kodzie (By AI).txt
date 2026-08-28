@@ -1,4 +1,4 @@
-Etap I: Przygotowanie chmury punktów
+  Konfiguracja przygotowania chmury punktów
 
 NumNeighbors = 50: Liczba sąsiadów analizowana podczas odszumiania algorytmem pcdenoise.
 
@@ -6,7 +6,7 @@ Threshold = 2.0: Próg odległości (rygorystyczność) usuwania szumów.
 
 gridStep = 0.25: Wymiar oczka siatki (w metrach) dla funkcji pcdownsample redukującej gęstość punktów.
 
-Etap II: Segmentacja i ekstrakcja dachów
+  Konfiguracja segmentacji i ekstrakcji dachów
 
 pkt_ziemi = 1.0: Tolerancja dopasowania płaszczyzny referencyjnej dla usunięcia gruntu.
 
@@ -34,7 +34,7 @@ min_suma_m2 = 35: Minimalna całkowita powierzchnia dachu potrzebna do kwalifika
 
 min_glowny_spad_m2 = 15: Minimalna powierzchnia głównej połaci dachu (eliminuje garaże i altany).
 
-Etap IV: Analiza solarna i ray-tracing
+  Konfiguracja analizy słońca i ray-tracingu
 
 szer_geo, dlug_geo, strefa: Zmienne lokalizacyjne wymagające uzupełnienia przed uruchomieniem.
 
@@ -44,7 +44,7 @@ godziny = 0:1:23: Doba podzielona na godzinowe kroki symulacji.
 
 promien_cienia = 0.5: Zasięg (w metrach) poszukiwania cienia od rzuconego wektora, przypisujący zacienienie do konkretnych punktów dachu.
 
-Etap V: Optymalizacja ułożenia paneli (2D)
+Konfiguracja optymalizacji ułożenia paneli (2D)
 
 panel_szerokosc = 1.13: Fizyczna szerokość panelu w metrach.
 
@@ -58,7 +58,7 @@ limit_cienia = 14: Maksymalna dopuszczalna liczba godzin w cieniu dla pojedyncze
 
 min_paneli_na_polaci = 4: Limit decyzyjny ignorujący dachy, na których zmieszczą się mniej niż 4 moduły.
 
-Etap VI: Raport inwestycyjny
+  Konfiguracja raportu ekonomicznego
 
 Wartość 0.4: Moc znamionowa pojedynczego panelu (400 Wp) użyta w obliczeniach szacunkowych.
 
