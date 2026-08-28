@@ -44,7 +44,7 @@ godziny = 0:1:23: Doba podzielona na godzinowe kroki symulacji.
 
 promien_cienia = 0.5: Zasięg (w metrach) poszukiwania cienia od rzuconego wektora, przypisujący zacienienie do konkretnych punktów dachu.
 
-Konfiguracja optymalizacji ułożenia paneli (2D)
+  Konfiguracja optymalizacji ułożenia paneli (2D)
 
 panel_szerokosc = 1.13: Fizyczna szerokość panelu w metrach.
 
