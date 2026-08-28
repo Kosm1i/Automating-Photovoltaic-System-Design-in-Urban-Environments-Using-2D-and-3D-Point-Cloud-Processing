@@ -1,6 +1,6 @@
 disp('ETAP I START');
 
-% Wstaw tutaj swoj plik laz
+% Wstaw tutaj swoj plik .laz
 filename = '?'; 
 
 laz = lasFileReader(filename);
