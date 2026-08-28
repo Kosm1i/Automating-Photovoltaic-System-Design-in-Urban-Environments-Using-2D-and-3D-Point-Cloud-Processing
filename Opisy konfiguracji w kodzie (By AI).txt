@@ -1,0 +1,71 @@
+Etap I: Przygotowanie chmury punktów
+
+NumNeighbors = 50: Liczba sąsiadów analizowana podczas odszumiania algorytmem pcdenoise.
+
+Threshold = 2.0: Próg odległości (rygorystyczność) usuwania szumów.
+
+gridStep = 0.25: Wymiar oczka siatki (w metrach) dla funkcji pcdownsample redukującej gęstość punktów.
+
+Etap II: Segmentacja i ekstrakcja dachów
+
+pkt_ziemi = 1.0: Tolerancja dopasowania płaszczyzny referencyjnej dla usunięcia gruntu.
+
+pkt_odciete = 1.5: Wysokość (w metrach) oddzielająca główne obiekty od niższych zanieczyszczeń terenu.
+
+pkt_sasiedzi = 15: Liczba punktów sąsiednich używana do estymacji wektorów normalnych.
+
+pkt_liscie = 0.45: Próg składowej Z wektora normalnego pozwalający odróżnić twarde dachy od rozproszonej roślinności.
+
+pkt_odleglosc_klastra = 1.0: Maksymalny dystans dla algorytmu DBSCAN łączącego punkty w jeden budynek.
+
+pkt_min_klastra = 250: Minimalna liczba punktów niezbędna do utworzenia klastra budynku.
+
+tol_sztywna = 0.08: Tolerancja RANSAC wyznaczająca idealnie płaskie rdzenie połaci dachowych.
+
+tol_luzna = 0.25: Tolerancja przypisująca lekko odstające punkty do wcześniej wykrytej połaci.
+
+min_pkt_polaci = 35: Minimalna liczba punktów wymagana, aby zbiór został zaklasyfikowany jako użyteczny dach.
+
+max_polaci_na_dom = 10: Limit iteracji algorytmu na jeden budynek.
+
+gestosc = 16: Przyjęty przelicznik gęstości punktów po downsamplingu do szacowania powierzchni połaci w m².
+
+min_suma_m2 = 35: Minimalna całkowita powierzchnia dachu potrzebna do kwalifikacji budynku.
+
+min_glowny_spad_m2 = 15: Minimalna powierzchnia głównej połaci dachu (eliminuje garaże i altany).
+
+Etap IV: Analiza solarna i ray-tracing
+
+szer_geo, dlug_geo, strefa: Zmienne lokalizacyjne wymagające uzupełnienia przed uruchomieniem.
+
+dzien_roku = 172: Numer dnia roku do symulacji cienia (przesilenie letnie).
+
+godziny = 0:1:23: Doba podzielona na godzinowe kroki symulacji.
+
+promien_cienia = 0.5: Zasięg (w metrach) poszukiwania cienia od rzuconego wektora, przypisujący zacienienie do konkretnych punktów dachu.
+
+Etap V: Optymalizacja ułożenia paneli (2D)
+
+panel_szerokosc = 1.13: Fizyczna szerokość panelu w metrach.
+
+panel_dlugosc = 1.72: Fizyczna długość panelu w metrach.
+
+margines = 0.15: Dystans montażowy (przerwa) między poszczególnymi modułami.
+
+zapas_krawedz = 0.3: Minimalna bezpieczna odległość od obrysu dachu.
+
+limit_cienia = 14: Maksymalna dopuszczalna liczba godzin w cieniu dla pojedynczego modułu PV.
+
+min_paneli_na_polaci = 4: Limit decyzyjny ignorujący dachy, na których zmieszczą się mniej niż 4 moduły.
+
+Etap VI: Raport inwestycyjny
+
+Wartość 0.4: Moc znamionowa pojedynczego panelu (400 Wp) użyta w obliczeniach szacunkowych.
+
+uzysk_z_kWp = 950: Spodziewany roczny uzysk energii (kWh) z 1 kWp zainstalowanej mocy.
+
+cena_pradu = 1.15: Założona taryfowa stawka za 1 kWh (PLN).
+
+koszt_za_1kWp = 4000: Uśredniony rynkowy koszt budowy 1 kWp instalacji (PLN).
+
+emisyjnosc_co2 = 0.70: Przelicznik emisji (tony CO2 na 1 MWh) w sieci energetycznej.
