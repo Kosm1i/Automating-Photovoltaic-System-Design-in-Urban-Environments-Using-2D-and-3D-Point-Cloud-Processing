@@ -45,7 +45,7 @@ Głównym celem projektu jest opracowanie inteligentnego systemu (i zdanie przed
 ## Wykorzystanie:
 * Na **Geoportalu** wyszukujesz swojego obszaru z domem/dzielnicą, po wyszukaniu go w **Dane do pobrania** wybierasz **Chmura punktów ALS** (czyli LiDAR samolotowy). Wybierz tą z **PL-EVRF2007-NH** w nazwie.
 * Następnie po kliknięciu mapa powinna podzielić się na kwadraty, wybierz swój którym jesteś zainteresowany. Kliknij na niego i kliknij najnowszy. (Polecam tutaj miasta do badania gdyż są zrobione w 12p/m^2, a nawet 24p/m^2)
-* Pamiętaj by zaktualizować kod, zmienić nazwę pliku i dodać współrzędne geograficzne jak szerokość i wysokość.
+* **Pamiętaj** by zaktualizować kod, zmienić nazwę pliku .laz i dodać współrzędne geograficzne jak szerokość i długość wybranego obszaru.
 * Pobrany plik wrzuć do programu.
 * Ważna uwaga! Analiza takiego dużego pliku może zająć dużo czasu, jeśli jesteś zainteresowany jakimś szczególnym domem/dzielnicą wtedy pobierz program **CloudCompare** (free) i przytnij obszar.
 
