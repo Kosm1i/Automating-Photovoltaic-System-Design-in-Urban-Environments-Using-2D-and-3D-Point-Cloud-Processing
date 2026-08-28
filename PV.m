@@ -1,7 +1,7 @@
 disp('ETAP I START');
 
 % Wstaw tutaj swoj plik .laz
-filename = '?'; 
+filename = 'chmura_punktow_test.laz'; 
 
 laz = lasFileReader(filename);
 surowe_pkt = readPointCloud(laz);
