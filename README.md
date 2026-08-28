@@ -10,7 +10,7 @@ Proces analizy i optymalizacji został podzielony na 5 głównych etapów:
 ### Pozyskanie i przygotowanie danych
 * **Import i transformacja:** Wczytanie surowej chmury punktów z serwisu Geoportal.
 * **Filtracja i Downsampling:** Usunięcie szumu pomiarowego, punktów o niskiej ufności oraz redukcja gęstości chmury punktów w celu optymalizacji złożoności obliczeniowej bez utraty kluczowych cech geometrycznych.
-* **Normalizacja układu współrzędnych:** Transformacja danych z globalnego układu geodezyjnego (PUWG 1992) do lokalnego układu kartezjańskiego (0,0,0).
+* **Normalizacja układu współrzędnych:** Transformacja danych z globalnego układu geodezyjnego do lokalnego układu kartezjańskiego.
 
 ### Segmentacja i Klasyfikacja 3D
 * **Separacja obiektów:** Oddzielenie punktów reprezentujących grunt od zabudowy i roślinności.
@@ -30,7 +30,7 @@ Proces analizy i optymalizacji został podzielony na 5 głównych etapów:
 
 ### Algorytm Optymalizacji Topologii PV
 * **Upakowanie geometryczne:** Automatyczne rozmieszczanie prostokątnych modułów PV wewnątrz nieregularnych obrysów dachu.
-* **Kryterium decyzyjne:** Bezwzględne odrzucanie lokalizacji, w których prognozowane roczne straty wynikające z zacienienia przekraczają próg 20%.
+* **Kryterium decyzyjne:** Bezwzględne odrzucanie lokalizacji, w których prognozowane roczne straty wynikające z zacienienia przekraczają próg wpisany przez użtykownika.
 * **Szeregowanie elektryczne:** Automatyczne grupowanie rozmieszczonych modułów w łańcuchy elektryczne.
 
 ## Wykorzystane:
