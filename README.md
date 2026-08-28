@@ -41,3 +41,10 @@ Głównym celem projektu jest opracowanie inteligentnego systemu (i zdanie przed
 * Czy program jest skuteczny? Tak, moim zdaniem pomoże ci w wyborze dobrych miejsc do ułożenia lecz brałbym na to poprawkę.
 * Nie ma uwzględnionych dużo rzeczy, gdyż chodziło tu głównie o algorytmy. Dlatego projekt można śmiało nazwać projektem "studenckim" nie przeznaczonym do polegania na nim w 100%.
 * Lecz jeśli go użyjesz lub masz jakieś pytania/poprawki, śmiało możesz napisać opinie i odnieść się do tego co stworzyłem.
+
+## Wykorzystanie:
+* Na **Geoportalu** wyszukujesz swojego obszaru z domem/dzielnicą, po wyszukaniu go w **Dane do pobrania** wybierasz **Chmura punktów ALS** (czyli LiDAR samolotowy). Wybierz tą z **PL-EVRF2007-NH** w nazwie.
+* Następnie po kliknięciu mapa powinna podzielić się na kwadraty, wybierz swój którym jesteś zainteresowany. Kliknij na niego i kliknij najnowszy. (Polecam tutaj miasta do badania gdyż są zrobione w 12p/m^2, a nawet 24p/m^2)
+* Pobrany plik wrzuć do programu.
+* Ważna uwaga! Analiza takiego dużego pliku może zająć dużo czasu, jeśli jesteś zainteresowany jakimś szczególnym domem/dzielnicą wtedy pobierz program **CloudCompare** (free) i przytnij obszar.
+
