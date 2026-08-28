@@ -1,5 +1,6 @@
 disp('ETAP I START');
 
+% Wstaw tutaj swoj plik laz
 filename = '?'; 
 
 laz = lasFileReader(filename);
@@ -86,6 +87,7 @@ fprintf('Rozpoznano %d osobnych budynków na osiedlu\n', budynki_liczba);
 disp('Ekstrakcja połaci dachowych i kominów');
 warning('off', 'vision:ransac:maxTrialsReached'); 
 
+% Konfiguracja
 tol_sztywna         = 0.08; 
 tol_luzna           = 0.25; 
 min_pkt_polaci      = 35;   
@@ -181,6 +183,7 @@ for i = 1:length(wszystkie_polacie_dachu)
 end
 hold off;
 
+% Konfiguracja (usuwanie garazy/drzew)
 prawdziwe_domy = [];
 min_suma_m2 = 35;        
 min_glowny_spad_m2 = 15; 
@@ -479,6 +482,7 @@ set(gca, 'Color', [0.2 0.2 0.2], 'XColor', 'w', 'YColor', 'w', 'ZColor', 'w');
 disp('ETAP V START');
 disp('Algorytm geometrycznego pakowania paneli 2D');
 
+% Konfiguracja (optymalna dla paneli)
 panel_szerokosc = 1.13; 
 panel_dlugosc = 1.72;   
 margines = 0.15;        
@@ -582,6 +586,7 @@ if suma_paneli_osiedle == 0
     return;
 end
 
+% Konfiguracja (ekonomiczna)
 moc_kWp = suma_paneli_osiedle * 0.4;        
 uzysk_z_kWp = 950;                          
 cena_pradu = 1.15;                           
