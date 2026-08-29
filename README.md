@@ -38,9 +38,9 @@ Głównym celem projektu jest opracowanie inteligentnego systemu (i zdanie przed
 ## Dodatkowe:
 * Projekt został stworzony na potrzeby zajęć na studiach. Plan jest stworzony w 100% przez mnie natomiast wykonanie jest wspólne z **AI**.
 * Przy wykorzystaniu AI dane i ich poprawność zostały przez mnie potwierdzone jak i przez mojego prowadzącego.
-* Czy program jest skuteczny? Tak, moim zdaniem pomoże ci w wyborze dobrych miejsc do ułożenia lecz brałbym na to poprawkę.
-* Nie ma uwzględnionych dużo rzeczy, gdyż chodziło tu głównie o algorytmy. Dlatego projekt można śmiało nazwać projektem "studenckim" nie przeznaczonym do polegania na nim w 100%.
-* Lecz jeśli go użyjesz lub masz jakieś pytania/poprawki, śmiało możesz napisać opinie i odnieść się do tego co stworzyłem.
+* Czy program jest skuteczny? Nie, program jest zbyt mało rozwinięty, żeby jego **praktyczne** zastosowanie miało sens.
+* Program był napisany z myślą o algorytmice przestrzennej dlatego algorytmy RANSAC, DBSCAN, filtracji itd. są prawidłowo zaprogramowane. (jest to informacja potwierdzona przez prowadzącego.)
+* Lecz jeśli go użyjesz lub masz jakieś pytania, śmiało możesz napisać opinie i odnieść się do tego co stworzyłem.
 
 ## Wykorzystanie:
 * Na **Geoportalu** wyszukujesz swojego obszaru z domem/dzielnicą, po wyszukaniu go w **Dane do pobrania** wybierasz **Chmura punktów ALS** (czyli LiDAR samolotowy). Wybierz tą z **PL-EVRF2007-NH** w nazwie.
